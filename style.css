@@ -336,9 +336,10 @@ padding:  50px 250px;
     padding: 40px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-height: 100px;
+    min-height: 150px;
 }
 .contact-form input{
     display: flex;
@@ -352,7 +353,7 @@ padding:  50px 250px;
 }
 .form-input{
     /* border: 1px solid sienna; */
-    width: 48%;
+    width: 46%;
 }
 #message{
     padding: 20px 90px 70px 10px;
