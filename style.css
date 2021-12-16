@@ -8,6 +8,9 @@ body{
     font-family:'poppins',sans-serif;
     
 }
+html,body{
+    overflow-x: hidden;
+}
 /* ////////////detail header////////// */
 .headermain-div{
     width: 100%;
@@ -143,6 +146,17 @@ header{
     background-color: #11998e;
 }
 @media screen and (max-width: 768px){
+    
+    .main-div p{
+        font-size: 11px; 
+        
+    }
+    .main-heading{
+        font-size: 50px;
+    }
+    .img-div img{
+        width: 90%;
+    }
     header{
         width: 100%;
         height: 48px;
@@ -152,6 +166,7 @@ header{
     }
     .logo a{
         font-size: 0.9rem;
+        margin-left: 10px;
     }
     .logo img{
         width: 30px;
@@ -196,8 +211,7 @@ header{
     }
     .show{
         right: 0;
-
-}
+    }
 }
 
 .footer{
