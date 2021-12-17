@@ -143,7 +143,7 @@ header{
 /* //////////////////////////// contact, feedback , about header/////////////////// */
 
 .header {
-    background-color: #11998e;
+    background-image: linear-gradient( #11998e, #38ef7d);
 }
 @media screen and (max-width: 768px){
     
@@ -436,4 +436,39 @@ padding:  50px 250px;
     color: white;
     transform: rotateY(180deg);
     border: none;
+}
+
+
+
+
+/* contact us form styling */
+
+.contact-us {
+    padding: 70px 0px;
+    background-image: linear-gradient( #11998e, #38ef7d);
+}
+.section-title h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: normal;
+    border-bottom: 5px solid #38ef7d;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.section-title p {
+    color: #e8e8e8;
+    margin-bottom: 30px;
+}
+.contact-us input,
+.contact-us textarea {
+    background: #fafafa;
+    
+}
+.contact-us textarea {
+    min-height: 188px;
+    max-width: 100%;
+}
+.contact-us .map {
+    overflow: hidden;
+    border-radius: 4px;
 }
