@@ -427,7 +427,9 @@ padding:  50px 250px;
 }
   
 
-.flip-card-front {
+.mainbg-con{
+    border: 1px solid black;
+    background-color: whitesmoke;
 }
   
 .flip-card-back {
