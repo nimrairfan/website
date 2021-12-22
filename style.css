@@ -20,7 +20,6 @@ html,body{
     background-image: linear-gradient( #11998e, #38ef7d);
     min-height:750px;
     /* background-image: linear-gradient( #8ac241, #52B7AC); */
-    /* margin-bottom: 100px; */
     opacity: 0.8;
 }
 .main-div{
@@ -30,14 +29,13 @@ html,body{
     max-height: 40px;
     text-align: center;
     padding-top: 5px;
-    background-color: black;
+    background-color:black;
     color: whitesmoke;
     display: flex;
     justify-content: center;
 }
 .contact{
     margin-right: 10px;
-    /* border-right: 1px solid white; */
 }
 .div1-p p:hover {
     text-decoration: underline;
@@ -45,15 +43,15 @@ html,body{
 }
 .fas{
     font-size: 20px;
-    /* margin-top: 10px; */
 }
 a{
     text-decoration: none;
-    /* color: black; */
 }
-ul{
+.nav_list{
     list-style: none;
 }
+
+
 /* ///////////Main header////////// */
 header{
     width: 100%;
@@ -70,11 +68,13 @@ header{
 }
 .logo img {
     color: black;
-    width: 100px;
+    width: 80px;
     margin-right: 10px;
+    /* margin-top: 15px; */
     
 }
 .header_logo{
+    /* margin-top: 20px; */
     font-size: 30px;
     font-weight: 500;
     color: black;
@@ -91,12 +91,12 @@ header{
     margin: 20px 5px;
 }
 .nav_link{
-    padding: 20px;
+    padding: 10px ;
     /* color: #eeee; */
     color: black;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 400;
     border-radius: 5px;
 }
 .header_toggle, .header_close{
@@ -499,7 +499,8 @@ h2:hover{
     margin-right:auto;
     width: 48%;
     padding: 30px;
-    background-color: #EAF2FC;
+    /* background-color: #EAF2FC; */
+    background-color: #122239;
     border-radius: 10px;
     /* border: 1px solid blue; */
     margin-bottom: 20px;
@@ -525,7 +526,7 @@ h2:hover{
     margin-left: auto;
 }
 .obj-para li{
-    background: linear-gradient(#11998e,#38ef7d);
+    background: linear-gradient(#2980B9,#38ef7d);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip:text;
     margin-bottom: 15px;
@@ -536,6 +537,10 @@ h2:hover{
 .obj-para li:hover{
     cursor: pointer;
     
+}
+.obj-para ul li::before{
+    background: linear-gradient(#11998e,#38ef7d);
+
 }
 @media screen and (max-width: 768px){
     .obj-heading{
@@ -559,5 +564,71 @@ h2:hover{
     }
     .obj-para{
         width: 100%;
+    }
+}
+
+
+
+/* ///////////////// cards //////////////////*/
+.cards-main-con{
+    width: 100%;
+    padding: 50px 150px;
+}
+.center-main-con{
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+.first-card{
+    width: 20%;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+.color-card , .pic-card{
+    width: 100%;
+    height: 80%;
+
+}
+.color-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: oblique;
+
+}
+.pic-card{
+    background-image: url(./images/img7.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-bg1{
+    background-color: #11998ee7;
+}
+.card-bg2 , .card-bg3{
+    background-image:linear-gradient(#11998e,#38ef7d );
+}
+.card-bg4{
+    background-color: #38ef7ecc;
+}
+@media screen and (max-width: 768px){
+    .center-main-con{
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        width: 100%;
+        
+    }
+    .first-card{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }
