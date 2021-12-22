@@ -149,7 +149,10 @@ header{
 
 .header {
     background-image: linear-gradient( #11998e, #38ef7d);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6b550995fd53c4ae2b0b4d860e650dfbe593d358
 }
 @media screen and (max-width: 768px){
     
@@ -465,6 +468,7 @@ h2:hover{
     -webkit-background-clip:text;
     transform: rotateY(180deg);
     border: none;
+<<<<<<< HEAD
     font-size: 1.3rem;
 }
 .flip-card-back i{
@@ -483,10 +487,13 @@ h2:hover{
     .image-card{
 width: 40%;
     }
+=======
+>>>>>>> 6b550995fd53c4ae2b0b4d860e650dfbe593d358
 }
 
 
 
+<<<<<<< HEAD
 /* /////////////////////// objectives ///////////////// */
 
 
@@ -659,3 +666,37 @@ width: 40%;
 
 
 
+=======
+
+/* contact us form styling */
+
+.contact-us {
+    padding: 70px 0px;
+    background-image: linear-gradient( #11998e, #38ef7d);
+}
+.section-title h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: normal;
+    border-bottom: 5px solid #38ef7d;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.section-title p {
+    color: #e8e8e8;
+    margin-bottom: 30px;
+}
+.contact-us input,
+.contact-us textarea {
+    background: #fafafa;
+    
+}
+.contact-us textarea {
+    min-height: 188px;
+    max-width: 100%;
+}
+.contact-us .map {
+    overflow: hidden;
+    border-radius: 4px;
+}
+>>>>>>> 6b550995fd53c4ae2b0b4d860e650dfbe593d358
