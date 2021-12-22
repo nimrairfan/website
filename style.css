@@ -479,6 +479,13 @@ h2:hover{
 }
 
 
+@media screen and (max-width: 1025px){
+    .image-card{
+width: 40%;
+    }
+}
+
+
 
 /* /////////////////////// objectives ///////////////// */
 
@@ -632,3 +639,23 @@ h2:hover{
         flex-direction: column;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
