@@ -699,7 +699,7 @@ h2:hover{
 .mnv-main-con{
     width: 100%;
     padding: 0 100px;
-    display: flex;
+    /* display: flex; */
     /* justify-content: center; */
     justify-content: space-around;
     margin-bottom: 30px;
@@ -708,21 +708,20 @@ h2:hover{
     display: flex;
     /* justify-content: space-around; */
     background-color:#E8F6F5;
-    width: 70%;
+    width: 100%;
     padding: 60px;
     border-radius: 10px;
 }
-.mnv-heading{
+.obj-heading{
     background-color:  #38ef7d;
     display: inline-block;
+    padding:  40px;
     /* color: whitesmoke; */
     font-style: italic;
     border-radius: 35px 10em 10%;
-    margin-bottom: 30px;
-    
+    margin-bottom: 10px;
 }
-.mnv-heading h1{
-    padding:  50px;
+.obj-heading h1{
     font-weight: 800;
     background: linear-gradient(#000000,#434343);
     -webkit-text-fill-color: transparent;
@@ -735,4 +734,69 @@ h2:hover{
 }
 .mnv-para li{
     font-size: 25px;
+}
+@media screen and (max-width: 768px){
+    .mnv-main-con{
+        padding: 0 10px 0 10px;
+    }
+    .mnv-cen-con{
+       width: 100%;
+       padding: 30px;
+    }
+    .mnv-heading {
+        height: 150px;
+
+        /* padding: 20px; */
+    }
+    .mnv-heading h1{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .mnv-para li{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .mnv-main-con{
+        padding: 0 20px 0 20px;
+    }
+    .mnv-cen-con{
+       width: 100%;
+       padding: 30px;
+    }
+    .mnv-heading {
+        height: 200px;
+
+        /* padding: 20px; */
+    }
+    .mnv-heading h1{
+        /* padding: 30px; */
+        font-size: 30px;
+    }
+    .mnv-para li{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 576px){
+    .mnv-main-con{
+        padding: 0 10px 0 10px;
+    }
+    .mnv-cen-con{
+        display: flex;
+        flex-direction: column;
+       width: 100%;
+       padding: 30px;
+    }
+    .mnv-heading {
+        height: 160px;
+        width: 80%;
+        /* padding: 20px; */
+    }
+    .mnv-heading h1{
+        /* padding: 30px; */
+        font-size: 25px;
+    }
+    .mnv-para li{
+        font-size: 15px;
+    }
 }
