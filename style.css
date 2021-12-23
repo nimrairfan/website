@@ -68,7 +68,7 @@ header{
 }
 .logo img {
     color: black;
-    width: 80px;
+    width: 60px;
     margin-right: 10px;
     /* margin-top: 15px; */
     
@@ -140,11 +140,24 @@ header{
 
 .main-heading{
     font-weight: 800;
-    font-size: 60px;
+    font-size: 80px;
     margin-bottom: 10px;
     /* color: #6be585; */
 }
-
+@media screen and (max-width: 768px ){
+    .container-2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .img-div > img{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .div2-text button{
+        margin-top: 10px;
+    }
+    
+}
 /* //////////////////////////// contact, feedback , about header/////////////////// */
 
 .header {
@@ -161,10 +174,11 @@ header{
         font-size: 50px;
     }
     .img-div img{
-        width: 70%;
-        margin-left: 40px;
+        width: 60%;
+        margin-left: 80px;
     }
     header{
+        margin-top: 10px;
         width: 100%;
         height: 48px;
         justify-content: space-between;
@@ -172,11 +186,11 @@ header{
         /* justify-content: center; */
     }
     .logo a{
-        font-size: 0.9rem;
-        margin-left: 10px;
+        font-size: 1.2rem;
+        margin-left: 5px;
     }
     .logo img{
-        width: 30px;
+        width: 40px;
     }
     .header_toggle{
         display: inline;
@@ -456,6 +470,18 @@ h2:hover{
     background-color: whitesmoke;
     width: 100%;
 }
+.card-qoute p{
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    /* background-image:linear-gradient(  #06beb6, #48b1bf); */
+    background: linear-gradient(#11998e,#38ef7d);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    /* transform: rotateY(180deg); */
+    border: none;
+    font-size: 1.4rem;
+}
   
 .flip-card-back {
     padding: 20px;
@@ -498,6 +524,7 @@ h2:hover{
 .right-obj-con{
     margin-right:auto;
     width: 48%;
+    /* height: 40%; */
     padding: 30px;
     /* background-color: #EAF2FC; */
     background-color: #122239;
@@ -519,7 +546,7 @@ h2:hover{
     background: linear-gradient(#000000,#434343);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip:text;
-    font-size: 50px;
+    font-size: 40px;
 }
 .obj-para{
     width: 75%;
@@ -530,7 +557,7 @@ h2:hover{
     -webkit-text-fill-color: transparent;
     -webkit-background-clip:text;
     margin-bottom: 15px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     margin-left: 20px;
 }
@@ -570,14 +597,15 @@ h2:hover{
 
 
 /* ///////////////// cards //////////////////*/
-.cards-main-con{
+/* .cards-main-con{
     width: 100%;
     padding: 50px 150px;
 }
 .center-main-con{
+
     flex-direction: row;
     flex-wrap: wrap;
-    display: flex;
+    display:flex;
     width: 100%;
     height: 400px;
 }
@@ -590,7 +618,7 @@ h2:hover{
 .color-card , .pic-card{
     width: 100%;
     height: 80%;
-
+    border: 1px solid orangered;
 }
 .color-card{
     display: flex;
@@ -601,9 +629,28 @@ h2:hover{
     font-weight: 600;
     font-style: oblique;
 
+
 }
-.pic-card{
-    background-image: url(./images/img7.gif);
+.pic-card1{
+    background-image: url(./images/creative.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic-card2{
+    background-image: url(./images/cr.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic-card3{
+    background-image: url(./images/creative.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic-card4{
+    background-image: url(./images/creative.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -617,18 +664,75 @@ h2:hover{
 .card-bg4{
     background-color: #38ef7ecc;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px ){
+    .cards-main-con{
+        height: 1800px;
+    }
     .center-main-con{
         display: flex;
-        flex-direction: column;
-        height: 600px;
-        width: 100%;
+        flex-direction:row;
+        /* /height: 1500px; */
+         /* width: 80%;  */
+        /* justify-content: center;
         
     }
     .first-card{
-        width: 100%;
+        /* justify-content: center; */
+        /* width: 70%;
         height: 100%;
         display: flex;
         flex-direction: column;
+        margin: 20px 20px;
+    }.color-card span{
+        font-size: 20px;
+
     }
+}
+
+@media screen and (max-width: 320px ){
+    .center-main-con{
+    width: 100%;        
+
+    }
+} */ 
+
+.mnv-main-con{
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.mnv-cen-con{
+    display: flex;
+    /* justify-content: space-around; */
+    background-color:#E8F6F5;
+    width: 70%;
+    padding: 60px;
+    border-radius: 10px;
+}
+.mnv-heading{
+    background-color:  #38ef7d;
+    display: inline-block;
+    /* color: whitesmoke; */
+    font-style: italic;
+    border-radius: 35px 10em 10%;
+    margin-bottom: 30px;
+    
+}
+.mnv-heading h1{
+    padding:  50px;
+    font-weight: 800;
+    background: linear-gradient(#000000,#434343);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    font-size: 40px;
+}
+.mnv-para{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.mnv-para li{
+    font-size: 25px;
 }
