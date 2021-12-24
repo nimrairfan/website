@@ -50,7 +50,12 @@ a{
 .nav_list{
     list-style: none;
 }
+@media screen and (max-width: 576px ){
+    .email{
+        margin-top: 5px;
 
+}
+}
 
 /* ///////////Main header////////// */
 header{
@@ -311,7 +316,7 @@ header{
     color: rgb(106, 196, 106);
     margin-top: 20px;
 }
-h2:hover{
+.contact-head h2:hover{
     transform: scale(1.1);
     cursor: pointer;
 
@@ -593,108 +598,48 @@ h2:hover{
         width: 100%;
     }
 }
-
-
-
-/* ///////////////// cards //////////////////*/
-/* .cards-main-con{
-    width: 100%;
-    padding: 50px 150px;
+@media screen and (max-width: 576px){
+    .obj-heading h1{
+        padding-right: 2px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .obj-heading {
+        /* height: 10px; */
+        width: 120%;
+        /* padding: 10px; */
+    }
 }
-.center-main-con{
 
-    flex-direction: row;
-    flex-wrap: wrap;
-    display:flex;
-    width: 100%;
-    height: 400px;
-}
-.first-card{
-    width: 20%;
-    margin: 0 30px;
-    display: flex;
-    flex-direction: column;
-}
-.color-card , .pic-card{
-    width: 100%;
-    height: 80%;
-    border: 1px solid orangered;
+/* ///////////////// cards /////////////////////// */
+
+.main-cards-div{
+    padding:40px 80px;
+    margin-top: 50px;
 }
 .color-card{
+    height: 200px !important;
+}
+.color-card h5{
+    align-items: center;
     display: flex;
     justify-content: center;
+    padding: 60px;
     align-items: center;
-    color: black;
-    font-size: 25px;
-    font-weight: 600;
-    font-style: oblique;
-
+    color: whitesmoke;
 
 }
-.pic-card1{
-    background-image: url(./images/creative.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.pic-card2{
-    background-image: url(./images/cr.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.pic-card3{
-    background-image: url(./images/creative.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.pic-card4{
-    background-image: url(./images/creative.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.card-bg1{
-    background-color: #11998ee7;
-}
-.card-bg2 , .card-bg3{
-    background-image:linear-gradient(#11998e,#38ef7d );
-}
-.card-bg4{
-    background-color: #38ef7ecc;
-}
-@media screen and (max-width: 768px ){
-    .cards-main-con{
-        height: 1800px;
-    }
-    .center-main-con{
-        display: flex;
-        flex-direction:row;
-        /* /height: 1500px; */
-         /* width: 80%;  */
-        /* justify-content: center;
-        
-    }
-    .first-card{
-        /* justify-content: center; */
-        /* width: 70%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 20px 20px;
-    }.color-card span{
-        font-size: 20px;
+@media screen and (max-width: 576px){
+.main-cards-div{
+    padding: 20px;
 
-    }
+}
+.whole-card{
+    margin-bottom: 30px;
+
+}
 }
 
-@media screen and (max-width: 320px ){
-    .center-main-con{
-    width: 100%;        
-
-    }
-} */ 
 
 .mnv-main-con{
     width: 100%;
@@ -800,3 +745,54 @@ h2:hover{
         font-size: 15px;
     }
 }
+
+
+
+
+
+/* ///////////////////////// About ////////////////////// */
+
+.about-main-con{
+    width: 100%;
+    margin-top: 50px;
+}
+.about-cen-con{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+.about-image{
+    border-right: 3px solid gray;
+    width: 50%;
+    padding: 0 20px;
+    /* height: 70%; */
+}
+.about-info{
+    width: 50%;
+    margin-top: 200px;
+    padding: 0 10px;
+}
+.about-cen-con p{    
+    font-size: 18px;
+
+}
+.about-cen-con h1 , h2{
+    font-size: 40px;
+}
+.about-info p{
+    width: 90%;
+}
+
+/* ///////////////////////picture cards ////////////////////// */
+.card-columns {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+  }
