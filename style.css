@@ -417,8 +417,10 @@ header{
     flex-direction: row;
     /* border: 1px solid blue; */
 }
-.achieve-heading h2{
-    font-size: 60px;
+.achieve-heading img{
+    margin:50px auto;
+    width: 40%;
+    /* font-size: 60px; */
     font-weight: 600;
     padding: 10px;
     /* color: pink; */
@@ -426,7 +428,7 @@ header{
     justify-content: center;
     flex-wrap: wrap;
     color: rgb(106, 196, 106);
-    margin-top: 20px;
+    
 }
 .achieve-heading h2:hover{
     transform: scale(1.1);
@@ -482,11 +484,19 @@ header{
 }
 @media screen and (max-width: 425px){
     .achieve-heading h2{
-        font-size: 40px;
+        font-size: 20px;
     }
     .scene .card{
         margin-left: 50px;
     }
+}
+.award-icon{
+    width: 10%;
+    margin: auto;
+    font-size: 170px;
+    background: linear-gradient(#11998e, #38ef7d);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
 }
 
 
@@ -873,6 +883,10 @@ img {
     padding: 4rem 6rem; 
     background: linear-gradient(to bottom left, #11998e  40%, #38ef7d 100%);
 }
+.card_content h2{
+    padding: 0;
+    font-size: 30px;
+}
 
 .card_title{
     align-items: center;
@@ -907,7 +921,7 @@ img {
     font-weight: 600;
     padding: 10px;
 }
-.main h2{
+.main h3{
     
     font-size: 60px;
     font-weight: 600;
@@ -921,7 +935,7 @@ img {
     -webkit-background-clip:text;
     margin-top: 20px;
 }
-.main h2:hover{
+.main h3:hover{
     transform: scale(1.1);
     cursor: pointer;
     
@@ -929,7 +943,7 @@ img {
 
 /* //////////////////// backgound-image with text///////////////////// */
   .bg-overlay {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("./images/banner\ image.jpg");
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0, 0, 0, 0.527)), url("./images/banner\ image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -938,7 +952,19 @@ img {
     padding-top: 50px;
     margin-bottom: 50px;
 }
+.bg-no-overlay {
+    background: url("./images/banner\ image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 450px;
+    padding-top: 50px;
+}
 .about-ban-text {
+    color: whitesmoke;
     /* text-align: c; */
-    width: 100%;
+    width: 60%;
+    margin: auto;
+    line-height: 40%;
 }
