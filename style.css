@@ -428,87 +428,66 @@ header{
     color: rgb(106, 196, 106);
     margin-top: 20px;
 }
-
-.flip-card {
-    background-color: none;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px; 
-    margin: 20px;
+.achieve-heading h2:hover{
+    transform: scale(1.1);
+    cursor: pointer;
     
 }
-.flip-card-inner {
+.scene {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    perspective: 800px;
+    flex-wrap:wrap ;
+  }
+  .scene .card {
     position: relative;
+    width: 240px;
+    height: 300px;
+    color: white;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+    margin-bottom: 20px;
+  }
+  .scene .card:hover {
+    transform: rotateY(0.5turn);
+  }
+  .scene .card .card__face {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
- 
-}
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    min-height: 100%;
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    /* border: 1px solid blue; */
-    border-radius: 15px;
-
+            backface-visibility: hidden;
+    transition: 1s ease-in-out;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+  }
+  .scene .card .card__face img {
+    width: 240px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .scene .card .card__face--back {
+    transform: rotateY(0.5turn);
+  }
+.main-flip-body{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
-.flip-card-inner img{
-    /* border: 1px solid blue; */
-    border-radius: 15px;
-
+@media screen and (max-width: 425px){
+    .achieve-heading h2{
+        font-size: 40px;
+    }
+    .scene .card{
+        margin-left: 50px;
+    }
 }
-
-.mainbg-con{
-    min-height: 30px;
-    padding:40px 170px;
-    max-width: 100%;
-}
-.center-div{
-    background-color: whitesmoke;
-    width: 100%;
-}
-.card-qoute p{
-    margin-top: 30px;
-    text-align: center;
-    padding: 10px;
-    /* background-image:linear-gradient(  #06beb6, #48b1bf); */
-    background: linear-gradient(#11998e,#38ef7d);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip:text;
-    /* transform: rotateY(180deg); */
-    border: none;
-    font-size: 1.4rem;
-}
-  
-.flip-card-back {
-    padding: 20px;
-    /* background-image:linear-gradient(  #06beb6, #48b1bf); */
-    background: linear-gradient(#11998e,#38ef7d);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip:text;
-    transform: rotateY(180deg);
-    border: none;
-    font-size: 1.3rem;
-}
-.flip-card-back i{
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-.logo-bg{
-    /* background-image:linear-gradient(  #11998e,#38ef7d); */
-    /* border: 1px solid blue; */
-    border-radius: 30px;
-    background-color:rgba(0, 0, 0, 0.8);;
-}
-
 
 
 /* /////////////////////// objectives ///////////////// */
@@ -610,36 +589,6 @@ header{
         /* padding: 10px; */
     }
 }
-
-/* ///////////////// cards /////////////////////// */
-
-.main-cards-div{
-    padding:40px 80px;
-    margin-top: 50px;
-}
-.color-card{
-    height: 200px !important;
-}
-.color-card h5{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 60px;
-    align-items: center;
-    color: whitesmoke;
-
-}
-@media screen and (max-width: 576px){
-.main-cards-div{
-    padding: 20px;
-
-}
-.whole-card{
-    margin-bottom: 30px;
-
-}
-}
-
 
 .mnv-main-con{
     width: 100%;
@@ -773,12 +722,12 @@ header{
 .about-image{
     border-right: 3px solid gray;
     width: 50%;
-    padding:20px;
+    padding:10px;
     /* height: 70%; */
 }
 .about-info{
     margin-right:auto;
-    margin-top: 20%;
+    margin-top: 30%;
     width: 48%;
     height: 40%;
     padding: 30px;
@@ -874,28 +823,13 @@ header{
 }
 .main{
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 70px auto;
 }
 img {
-  height: auto;
+  /* height: auto; */
   max-width: 100%;
   vertical-align: middle;
 }
-
-.btn {
-  color: #ffffff;
-  padding: 0.8rem;
-  font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  font-weight: 400;
-  display: block;
-  width: 100%;
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: transparent;
-}
-
 .btn:hover {
   background-color: rgba(255, 255, 255, 0.12);
 }
@@ -934,37 +868,77 @@ img {
   overflow: hidden;
 }
 
-/* .card_content {
-  padding: 1rem;
-  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
-} */
+.card_content {
+    height: 150px;
+    padding: 4rem 6rem; 
+    background: linear-gradient(to bottom left, #11998e  40%, #38ef7d 100%);
+}
 
-/* .card_title {
+.card_title{
+    align-items: center;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: capitalize;
-  margin: 0px;
-} */
-
-/* .card_text {
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;    
-  font-weight: 400;
-} */
+  /* margin: 0px; */
+} 
 .made_by{
   font-weight: 400;
   font-size: 13px;
   margin-top: 35px;
   text-align: center;
 }
-.card_image p{
+.qoute{
+    text-align: center;
     background: linear-gradient(#11998e,#38ef7d);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip:text;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 600;
     padding: 20px 20px 0 20px;
+}
+.nation{
+    text-align: center;
+    background: linear-gradient(#11998e,#38ef7d);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px;
+}
+.main h2{
+    
+    font-size: 60px;
+    font-weight: 600;
+    padding: 10px;
+    /* color: pink; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(#11998e,#38ef7d);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    margin-top: 20px;
+}
+.main h2:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}
+
+/* //////////////////// backgound-image with text///////////////////// */
+  .bg-overlay {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("./images/banner\ image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 450px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.about-ban-text {
+    /* text-align: c; */
+    width: 100%;
 }
