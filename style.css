@@ -17,10 +17,13 @@ html,body{
 }
 .container-1{
     width: 100%;
-    background-image: linear-gradient( #11998e, #38ef7d);
-    min-height:750px;
+    background-image: url(./images/banner.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height:800px;
     /* background-image: linear-gradient( #8ac241, #52B7AC); */
-    opacity: 0.8;
+    opacity: 0.9;
 }
 .main-div{
     width: 100%;
@@ -101,7 +104,7 @@ header{
     color: black;
     text-decoration: none;
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 500;
     border-radius: 5px;
 }
 .header_toggle, .header_close{
@@ -141,8 +144,14 @@ header{
 .contact-btn{
     padding: 10px;
     font-size: 20px;
+    background-color: rgb(62, 184, 62) !important;
+    border-radius: 5px;
 }
-
+.contact-btn:hover{
+    background-color: green !important;
+    color: whitesmoke
+     !important;
+}
 .main-heading{
     font-weight: 800;
     font-size: 80px;
@@ -246,14 +255,14 @@ header{
     width: 100%;
     /* height: 200px; */
     padding: 20px;
-    background-color: rgba(128, 128, 128, 0.253);
+    background-color: #baccda;
 }
 .footer-con{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #243B55;
+    color: #11998e;
     font-size: 25px;
 }
 
@@ -266,26 +275,26 @@ header{
 }
 .footer-link a{
     text-decoration: none;
-    color: #243B55;
+    color: #11998e;
     margin: 0 10px ;
 }
 .footer-con  i{
-    color: #243B55;
+    color: #11998e;
     font-size: 30px;
-    border: 2px solid #243B55;
+    border: 3px solid #11998e;
     border-radius: 50%;
     padding: 8px;
 }
 .footer-con i:hover{
     color: white;
-    background-color: #243B55;
+  background-color: #11998e;
 }
 .footer-con p{
     font-size: 20px;
 
 }
 .footer-link a:hover{
-    color: #2a64a7;
+    color: royalblue;
 }
 .last-footer{
     background-color: royalblue;
@@ -296,8 +305,30 @@ header{
 .last-footer a{
     color: whitesmoke;
     
-}    
+}@media screen and (max-width: 425px){
+    .footer-link{
+        padding: 0;
 
+    }
+}    
+@media screen and (max-width: 375px){
+    .footer-link{
+        padding: 0;
+        font-size: 23px;
+    }
+} 
+@media screen and (max-width: 375px){
+    .footer-link{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        
+    }
+    .footer-link a{
+        margin: 10px 0;
+    }
+}  
 /* ///////////////////contact form/////////////////// */
 .contact-head{
     display: flex;
@@ -419,7 +450,7 @@ header{
 }
 .achieve-heading img{
     margin:50px auto;
-    width: 40%;
+    width: 50%;
     /* font-size: 60px; */
     font-weight: 600;
     padding: 10px;
@@ -465,19 +496,16 @@ header{
     backface-visibility: hidden;
   }
   .flip-card-front {
-    border: 1px solid #11998e;
     border-radius: 10px;
     background-color: #bbb;
     color: black;
   }
   .flip-card-inner img{
       border-radius: 10px;
-    border: 1px solid #11998e;
 
       
   }
   .flip-card-back {
-    border: 1px solid #11998e;
     border-radius: 10px;
     background-image: linear-gradient(#11998e,#38ef7d);
     color: white;
@@ -493,6 +521,29 @@ header{
     /* font-size: 20px; */
     font-weight: 600;
 }
+
+@media screen and (max-width: 768px){
+.achieve-heading img{
+    width: 80%;
+}}
+@media screen and (max-width: 425px){
+    .achieve-heading img{
+        width: 100%;
+    }
+    .flip-card {
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 425px){
+    .achieve-heading img{
+        width: 100%;
+        height: 150px;
+    }
+    .flip-card {
+        margin-left: 10px;
+    }
+}
+
 /* /////////////////////// objectives ///////////////// */
 
 .obj-con{
@@ -590,7 +641,6 @@ header{
         /* padding: 10px; */
     }
 }
-
 .mnv-main-con{
     width: 100%;
     padding: 0 100px;
@@ -701,6 +751,16 @@ header{
 
 
 /* ///////////////////////// About ////////////////////// */
+.about-heading{
+    font-size: 70px;
+    border-bottom: 20px solid #38ef7d;
+    display: inline-block;
+    padding:30PX 30PX 20PX 30px;
+    /* width: 20%; */
+    font-weight: 900;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 
 .about-main-con{
     /* border: 1px solid pink; */
@@ -730,10 +790,11 @@ header{
     margin-right:auto;
     margin-top: 30%;
     width: 48%;
-    height: 40%;
+    /* height: 40%; */
     padding: 30px;
     border-radius: 10px;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 .about-cen-con p{    
     font-size: 25px;
@@ -746,7 +807,6 @@ header{
      @media screen and (max-width: 1024px){
         .about-info{
             padding: 0 0 0 10px;    
-            border: 1px solid pink;
             width: 50%;
             margin-top: 300px;
             min-height: 500px;
@@ -774,7 +834,6 @@ header{
         }
         .about-info{
         padding: 0 0 0 10px;    
-        border: 1px solid pink;
         width: 100%;
         margin-top: 400px;
         min-height: 500px;
@@ -800,7 +859,6 @@ header{
     }
     .about-info{
         padding: 0 0 0 10px;    
-        border: 1px solid pink;
         width: 100%;
         margin-top: 20px;
         min-height: 500px;
@@ -862,17 +920,18 @@ img {
 
 .card {
   /* background-color: white; */
-  border-radius: 0.25rem;
+  border-radius: 5px;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 .card_content-heading{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
     height: 150px;
-    padding: 3rem 6rem; 
+    padding: 3rem 5.3rem; 
+    color: whitesmoke;
     background: linear-gradient(to bottom left, #11998e  40%, #38ef7d 100%);
     height: 150px;
 }
@@ -910,7 +969,6 @@ img {
     padding: 10px;
 }
 .main h3{
-    
     font-size: 60px;
     font-weight: 600;
     padding: 10px;
@@ -926,9 +984,7 @@ img {
 .main h3:hover{
     transform: scale(1.1);
     cursor: pointer;
-    
 }
-
 /* //////////////////// backgound-image with text///////////////////// */
   .bg-overlay {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0, 0, 0, 0.527)), url("./images/banner\ image.jpg");
@@ -952,7 +1008,23 @@ img {
 .about-ban-text {
     color: whitesmoke;
     /* text-align: c; */
-    width: 60%;
+    width: 100%;
     margin: auto;
     line-height: 40%;
+}
+@media screen and (max-width: 425px){
+    .about-ban-text h4{
+        font-size: 15px;
+        margin: 30px auto 0 auto; 
+        /* margin: 0; */
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .about-ban-text h4{
+        font-size: 20px;
+        margin: 30px auto 0 auto; 
+        /* margin: 0; */
+        width: 100%;
+    }
 }
